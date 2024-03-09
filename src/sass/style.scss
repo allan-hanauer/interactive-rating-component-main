@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass&display=swap");
+@import "./utils/colors";
+@import "../components/RatingState";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Overpass, sans-serif;
+  list-style: none;
+}
+
+body,
+#root {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: $clr-6;
+}
+
+footer {
+  display: block;
+  position: absolute;
+  margin-top: 97.6vh;
+  color: $clr-2;
+  a {
+    color: $clr-1;
+    text-decoration: none;
+    cursor: pointer;
+  }
+}

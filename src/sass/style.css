@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass&display=swap");
+main.rating_state_initial {
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(0deg, hsl(215, 27%, 12%) 0%, hsl(210, 23%, 15%) 100%);
+  max-width: 413px;
+  height: 416px;
+  width: 100%;
+  padding: 30px 40px 0px 32px;
+  border-radius: 30px;
+}
+main.rating_state_initial h1 {
+  color: hsl(0, 0%, 100%);
+  padding-top: 30px;
+  font-size: 1.8rem;
+  margin-bottom: 5px;
+}
+main.rating_state_initial p {
+  color: hsl(216, 12%, 54%);
+  padding-top: 5px;
+  font-size: 0.94rem;
+  line-height: 1.54rem;
+  padding-right: 7px;
+}
+main.rating_state_initial #star-box {
+  display: flex;
+  border-radius: 50%;
+  background-color: hsl(213, 19%, 18%);
+  width: 50px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+}
+main.rating_state_initial .box_button {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 28px;
+}
+main.rating_state_initial .box_button button {
+  display: flex;
+  border: none;
+  justify-content: center;
+  font-size: 1.1rem;
+  align-items: center;
+  border-radius: 50%;
+  background-color: hsl(213, 19%, 18%);
+  color: hsl(217, 12%, 63%);
+  width: 50px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+}
+main.rating_state_initial button.submit {
+  margin-top: 32px;
+  background-color: hsl(25, 97%, 53%);
+  width: 100%;
+  font-weight: 700;
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: hsl(0, 0%, 100%);
+  padding-top: 3px;
+  letter-spacing: 2px;
+  height: 45px;
+  border-radius: 20px;
+  border: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Overpass, sans-serif;
+  list-style: none;
+}
+
+body,
+#root {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: hsl(216, 12%, 8%);
+}
+
+footer {
+  display: block;
+  position: absolute;
+  margin-top: 97.6vh;
+  color: hsl(0, 0%, 100%);
+}
+footer a {
+  color: hsl(25, 97%, 53%);
+  text-decoration: none;
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */
