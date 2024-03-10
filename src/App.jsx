@@ -8,18 +8,15 @@ const App = () => {
   if (mode == "INITIAL") {
     return (
       <>
-        <main>
-          <RatingState setMode={setMode} setStar={setStar} star={star} />
-        </main>
+        <RatingState setMode={setMode} setStar={setStar} star={star} />
+
         <Footer />
       </>
     );
   } else if (mode == "FINAL") {
     return (
       <>
-        <main>
-          <EndRatingState star={star} />
-        </main>
+        <EndRatingState star={star} />
         <Footer />
       </>
     );
