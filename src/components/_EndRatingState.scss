@@ -1,0 +1,47 @@
+main.rating_state_final {
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  animation: top-res 1s ease-in-out;
+  background: linear-gradient(
+    0deg,
+    hsl(215, 27%, 12%) 0%,
+    hsl(210, 23%, 15%) 100%
+  );
+  align-items: center;
+  max-width: 413px;
+  height: 416px;
+  width: 100%;
+  padding: 45px 40px 0px 34px;
+  border-radius: 30px;
+  .img-illu {
+    width: 160px;
+    padding-bottom: 32px;
+  }
+  .box-select {
+    width: 192px;
+    font-size: 0.95rem;
+    padding-top: 3px;
+    padding-left: 3px;
+    margin-left: 5px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 16.5px;
+    background-color: $clr-5;
+    color: $clr-1;
+  }
+  h2 {
+    color: $clr-2;
+    font-size: 1.8rem;
+    padding-top: 35px;
+  }
+  p {
+    padding-top: 10px;
+    font-size: 0.93rem;
+    line-height: 1.48rem;
+    color: $clr-3;
+    text-align: center;
+  }
+}

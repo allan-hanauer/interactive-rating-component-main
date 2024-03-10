@@ -1,5 +1,10 @@
 import iconStar from "../assets/icon-star.svg";
-const RatingState = (setMode, setStar, star) => {
+
+const RatingState = ({ setMode, setStar, star }) => {
+  const handleClick = (value) => {
+    setStar(value);
+  };
+
   return (
     <main className="rating_state_initial">
       <div id="star-box">
@@ -13,11 +18,20 @@ const RatingState = (setMode, setStar, star) => {
       <form
         onSubmit={(e) => {
           e.preventDefault();
-          if (star != 0) setMode("FINAL");
+          if (star !== 0) setMode("FINAL");
         }}
       >
         <div className="box_button">
-            <input:
+          {[1, 2, 3, 4, 5].map((value) => (
+            <button
+              key={value}
+              type="button"
+              className={value === star ? "button selected" : "button"}
+              onClick={() => handleClick(value)}
+            >
+              {value}
+            </button>
+          ))}
         </div>
         <button type="submit" className="submit">
           Submit

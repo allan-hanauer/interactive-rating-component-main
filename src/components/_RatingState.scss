@@ -1,6 +1,7 @@
 main.rating_state_initial {
   margin-top: 8px;
   display: flex;
+  animation: top-res 1s ease-in-out;
   flex-direction: column;
   background: linear-gradient(
     0deg,
@@ -51,6 +52,15 @@ main.rating_state_initial {
       height: 50px;
       justify-content: center;
       align-items: center;
+      transition: 0.5s;
+    }
+    button:hover {
+      background-color: $clr-1;
+      color: $clr-2;
+    }
+    .button.selected {
+      background-color: $clr-4;
+      color: $clr-2;
     }
   }
   button.submit {
@@ -66,5 +76,16 @@ main.rating_state_initial {
     height: 45px;
     border-radius: 20px;
     border: none;
+    transition: 0.5s;
+  }
+  button.submit:hover {
+    background-color: $clr-2;
+    color: $clr-1;
+  }
+}
+@keyframes top-res {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
   }
 }

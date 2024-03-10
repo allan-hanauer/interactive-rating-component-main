@@ -2,6 +2,7 @@
 main.rating_state_initial {
   margin-top: 8px;
   display: flex;
+  animation: top-res 1s ease-in-out;
   flex-direction: column;
   background: linear-gradient(0deg, hsl(215, 27%, 12%) 0%, hsl(210, 23%, 15%) 100%);
   max-width: 413px;
@@ -50,6 +51,15 @@ main.rating_state_initial .box_button button {
   height: 50px;
   justify-content: center;
   align-items: center;
+  transition: 0.5s;
+}
+main.rating_state_initial .box_button button:hover {
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+}
+main.rating_state_initial .box_button .button.selected {
+  background-color: hsl(216, 12%, 54%);
+  color: hsl(0, 0%, 100%);
 }
 main.rating_state_initial button.submit {
   margin-top: 32px;
@@ -64,6 +74,61 @@ main.rating_state_initial button.submit {
   height: 45px;
   border-radius: 20px;
   border: none;
+  transition: 0.5s;
+}
+main.rating_state_initial button.submit:hover {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(25, 97%, 53%);
+}
+
+@keyframes top-res {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+}
+main.rating_state_final {
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  animation: top-res 1s ease-in-out;
+  background: linear-gradient(0deg, hsl(215, 27%, 12%) 0%, hsl(210, 23%, 15%) 100%);
+  align-items: center;
+  max-width: 413px;
+  height: 416px;
+  width: 100%;
+  padding: 45px 40px 0px 34px;
+  border-radius: 30px;
+}
+main.rating_state_final .img-illu {
+  width: 160px;
+  padding-bottom: 32px;
+}
+main.rating_state_final .box-select {
+  width: 192px;
+  font-size: 0.95rem;
+  padding-top: 3px;
+  padding-left: 3px;
+  margin-left: 5px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16.5px;
+  background-color: hsl(213, 19%, 18%);
+  color: hsl(25, 97%, 53%);
+}
+main.rating_state_final h2 {
+  color: hsl(0, 0%, 100%);
+  font-size: 1.8rem;
+  padding-top: 35px;
+}
+main.rating_state_final p {
+  padding-top: 10px;
+  font-size: 0.93rem;
+  line-height: 1.48rem;
+  color: hsl(217, 12%, 63%);
+  text-align: center;
 }
 
 * {
